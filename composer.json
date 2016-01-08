@@ -18,7 +18,7 @@
     "require-dev": {
         "antimattr/test-case": "~1.0@stable",
         "phpunit/phpunit": "~4.0",
-        "fabpot/php-cs-fixer": "0.5.*@dev",
+        "fabpot/php-cs-fixer": "~1.1",
         "mikey179/vfsStream": "1.*"
     },
     "minimum-stability": "dev",
@@ -26,8 +26,7 @@
         "psr-0": { "AntiMattr\\MongoDB\\Migrations\\": "src/" }
     },
     "autoload-dev": {
-        "psr-0": { 
-            "AntiMattr\\TestCase\\": "vendor/antimattr/test-case/src",
+        "psr-0": {
             "AntiMattr\\Tests\\MongoDB\\Migrations\\": "tests/"
         }
     },

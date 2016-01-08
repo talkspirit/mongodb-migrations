@@ -81,7 +81,7 @@ EOT
             }
 
             if (! $noInteraction) {
-                $confirmation = $this->getHelper('dialog')->askConfirmation($output, '<question>Are you sure you wish to continue? (y/n)</question>', false);
+                $confirmation = $this->getHelper('question')->askConfirmation($output, '<question>Are you sure you wish to continue? (y/n)</question>', false);
                 if (! $confirmation) {
                     $output->writeln('<error>Migration cancelled!</error>');
 
